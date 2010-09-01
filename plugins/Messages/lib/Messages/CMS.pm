@@ -68,7 +68,7 @@ sub _handle_template {
             msg_text  => (
                 $msg->{handler}
                 ? MT->handler_to_coderef( $msg->{handler} )->($app)
-                : $msg->{text}
+                : $msg->{label}
             )
           };
     }

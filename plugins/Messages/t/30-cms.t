@@ -19,7 +19,7 @@ my $p = MT->component('Messages');
 
 my $r = $p->registry;
 $r->{messages}->{edit_entry}->{_test_msg} =
-  { text => "THIS IS MY TEST MESSAGE" };
+  { label => "THIS IS MY TEST MESSAGE" };
 
 # have to re-init the app
 require Messages::CMS;
