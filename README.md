@@ -5,9 +5,9 @@ This plugin provides an easy method for other plugins to add a status message to
     messages:
       edit_entry:
         my_msg:
-	  text: 'This is my message'
-	  class: 'info'
-	  condition: sub { my ($app) = @_; return 1; }
+          text: 'This is my message'
+          class: 'info'
+          condition: sub { my ($app) = @_; return 1; }
 	  
 The condition method defaults to simply checking for the key in the applications parameters (e.g., `sub { return $_[0]->param('my_msg') }` in this case).  The method is passed the application object.
 
