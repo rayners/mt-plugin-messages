@@ -1,0 +1,8 @@
+name: Messages
+version: 0.1
+
+applications:
+  cms:
+    callbacks:
+      init_app: $Messages::Messages::CMS::init_app
+      template_source.header: $Messages::Messages::CMS::template_source_header
